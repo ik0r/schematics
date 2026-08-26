@@ -250,6 +250,11 @@
   resolved "https://registry.npmmirror.com/@humanwhocodes/object-schema/download/@humanwhocodes/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha1-h956+cIxgm/daKxyWPd8Qp4OX88=
 
+"@jasminejs/reporters@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.npmmirror.com/@jasminejs/reporters/-/reporters-1.1.0.tgz#46e2e69950097c2475e95e84e85824d1cf83c9a3"
+  integrity sha512-JIrlfaf9c6m0+GtBAgZdcFB6RIRbFBbXxZDZ0WOewq4cLIEcVKEe0RgI1FA77M39FNzeSMTAm+LK/kcQVIkfGQ==
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmmirror.com/@nodelib/fs.scandir/download/@nodelib/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -307,10 +312,10 @@
   dependencies:
     "@types/ms" "*"
 
-"@types/jasmine@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.npmmirror.com/@types/jasmine/-/jasmine-4.0.0.tgz#48bfd99cbe16dcdcde0b7d3bfa62319504d141f9"
-  integrity sha512-KvhqNz4NaONk7cfp4E9x+uXOUp7x4H2Zeyb4yXnw2vIuxD5YfSi1767x+aF7z54elhZcC0OH9/78/WL6+5jcDg==
+"@types/jasmine@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npmmirror.com/@types/jasmine/-/jasmine-6.0.0.tgz#85dc83ea9bcb1d047486da447a6a0ebe241f589c"
+  integrity sha512-18lgGsLmEh3VJk9eZ5wAjTISxdqzl6YOwu8UdMpolajN57QOCNbl+AbHUd+Yu9ItrsFdB+c8LSZSGNg8nHaguw==
 
 "@types/json-schema@^7.0.12":
   version "7.0.15"
@@ -594,6 +599,11 @@ balanced-match@^1.0.0:
   resolved "https://registry.npmmirror.com/balanced-match/download/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
   integrity sha1-6D46fj8wCzTLnYf2FfoMvzV2kO4=
 
+balanced-match@^4.0.2:
+  version "4.0.4"
+  resolved "https://registry.npmmirror.com/balanced-match/-/balanced-match-4.0.4.tgz#bfb10662feed8196a2c62e7c68e17720c274179a"
+  integrity sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==
+
 base64-js@^1.3.1:
   version "1.5.1"
   resolved "https://registry.npmmirror.com/base64-js/download/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
@@ -622,6 +632,13 @@ brace-expansion@^2.0.1:
   integrity sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==
   dependencies:
     balanced-match "^1.0.0"
+
+brace-expansion@^5.0.8:
+  version "5.0.9"
+  resolved "https://registry.npmmirror.com/brace-expansion/-/brace-expansion-5.0.9.tgz#7c72438809b5fa5babf54199a1f1c281a6984fcf"
+  integrity sha512-ScQ4IuvIEF1TMlP7Zt+vjJ//9zlPb2SDcxWxM3bk8s6t6GGdJ7KO1dCcTidOPJKePW30LE/2cT7wCyPho9/Wxg==
+  dependencies:
+    balanced-match "^4.0.2"
 
 braces@^3.0.1, braces@^3.0.2:
   version "3.0.2"
@@ -1253,7 +1270,16 @@ glob-parent@^6.0.1:
   dependencies:
     is-glob "^4.0.3"
 
-glob@^7.1.3, glob@^7.1.6:
+"glob@^10.2.2 || ^11.0.3 || ^12.0.0 || ^13.0.0":
+  version "13.0.6"
+  resolved "https://registry.npmmirror.com/glob/-/glob-13.0.6.tgz#078666566a425147ccacfbd2e332deb66a2be71d"
+  integrity sha512-Wjlyrolmm8uDpm/ogGyXZXb1Z+Ca2B8NbJwqBVg0axK9GbBeoS7yGV6vjXnYdGm6X53iehEuxxbyiKp8QmN4Vw==
+  dependencies:
+    minimatch "^10.2.2"
+    minipass "^7.1.3"
+    path-scurry "^2.0.2"
+
+glob@^7.1.3:
   version "7.2.0"
   resolved "https://registry.npmmirror.com/glob/download/glob-7.2.0.tgz#d15535af7732e02e948f4c41628bd910293f6023"
   integrity sha1-0VU1r3cy4C6Uj0xBYovZECk/YCM=
@@ -1487,18 +1513,19 @@ isexe@^2.0.0:
   resolved "https://registry.npmmirror.com/isexe/download/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
 
-jasmine-core@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npmmirror.com/jasmine-core/download/jasmine-core-4.0.0.tgz#8299ed38a100c47a1d154af63449a40967a7be5c"
-  integrity sha512-tq24OCqHElgU9KDpb/8O21r1IfotgjIzalfW9eCmRR40LZpvwXT68iariIyayMwi0m98RDt16aljdbwK0sBMmQ==
+jasmine-core@~7.0.0:
+  version "7.0.2"
+  resolved "https://registry.npmmirror.com/jasmine-core/-/jasmine-core-7.0.2.tgz#afee5b1edd630c714b3b064193756d28f201a317"
+  integrity sha512-YMVijt84KPQQFm1db1AQAxTXfq0k3wU06OkepLViljURFqiRQ7EYYX2eUAshhUv9fA9t1E2N65GrdqvupA9VPQ==
 
-jasmine@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npmmirror.com/jasmine/download/jasmine-4.0.0.tgz#7e924f75dbda7a8b96d3920d57249eb65c5fdc75"
-  integrity sha512-7htNYss1Bd6Dc3bPMWCFH17kaQyfau7cSOALco6RympKLLBFINW6Io4xNJqNGgU2ZYlqNmiXS1W+mjFTqa09xQ==
+jasmine@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.npmmirror.com/jasmine/-/jasmine-7.0.0.tgz#2df083e74d9f079b1b51bcfc4545d569b968b9b8"
+  integrity sha512-rnjiyg1LAhFZMoyU8ei/Wqyvti5oCzFhW7ZtkD6o+CSx3LpU9aYurPrh5BKyX3coGvmdEVYPC2HYh1rrBvZoWg==
   dependencies:
-    glob "^7.1.6"
-    jasmine-core "^4.0.0"
+    "@jasminejs/reporters" "^1.1.0"
+    glob "^10.2.2 || ^11.0.3 || ^12.0.0 || ^13.0.0"
+    jasmine-core "~7.0.0"
 
 js-tokens@^4.0.0:
   version "4.0.0"
@@ -1657,6 +1684,11 @@ log-update@^4.0.0:
     slice-ansi "^4.0.0"
     wrap-ansi "^6.2.0"
 
+lru-cache@^11.0.0:
+  version "11.5.2"
+  resolved "https://registry.npmmirror.com/lru-cache/-/lru-cache-11.5.2.tgz#00e16665c90c620fba14a3c368732a976493f760"
+  integrity sha512-4pfM1Ff0x50o0tQwb5ucw/RzNyD0/YJME6IVcStalZuMWxdt3sR3huStTtxz4PUmvZfRguvDejasvQ2kifR11g==
+
 lru-cache@^6.0.0:
   version "6.0.0"
   resolved "https://registry.npmmirror.com/lru-cache/download/lru-cache-6.0.0.tgz#6d6fe6570ebd96aaf90fcad1dafa3b2566db3a94"
@@ -1751,6 +1783,13 @@ minimatch@9.0.3:
   dependencies:
     brace-expansion "^2.0.1"
 
+minimatch@^10.2.2:
+  version "10.2.6"
+  resolved "https://registry.npmmirror.com/minimatch/-/minimatch-10.2.6.tgz#fd956bbe0b77241e9f15ac5dccb1c638060968ef"
+  integrity sha512-vpLQEs+VLCr1nU0BXS07maYoFwlDAH0gngQuuttxIwutDFEMHq2blX+8vpgxDdK3J1PwjCJiep77OitTZ4Ll1A==
+  dependencies:
+    brace-expansion "^5.0.8"
+
 minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmmirror.com/minimatch/download/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
@@ -1766,6 +1805,11 @@ minimist-options@4.1.0:
     arrify "^1.0.1"
     is-plain-obj "^1.1.0"
     kind-of "^6.0.3"
+
+minipass@^7.1.2, minipass@^7.1.3:
+  version "7.1.3"
+  resolved "https://registry.npmmirror.com/minipass/-/minipass-7.1.3.tgz#79389b4eb1bb2d003a9bba87d492f2bd37bdc65b"
+  integrity sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A==
 
 ms@2.1.2:
   version "2.1.2"
@@ -1950,6 +1994,14 @@ path-parse@^1.0.6:
   version "1.0.7"
   resolved "https://registry.npmmirror.com/path-parse/download/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
   integrity sha1-+8EUtgykKzDZ2vWFjkvWi77bZzU=
+
+path-scurry@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmmirror.com/path-scurry/-/path-scurry-2.0.2.tgz#6be0d0ee02a10d9e0de7a98bae65e182c9061f85"
+  integrity sha512-3O/iVVsJAPsOnpwWIeD+d6z/7PmqApyQePUtCndjatj/9I5LylHvt5qluFaBT3I5h3r1ejfR056c+FCv+NnNXg==
+  dependencies:
+    lru-cache "^11.0.0"
+    minipass "^7.1.2"
 
 path-type@^4.0.0:
   version "4.0.0"
